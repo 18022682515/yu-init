@@ -1,0 +1,22 @@
+{
+  "name": "test-1",
+  "version": "1.0.0",
+  "main": "run.js",
+  "scripts": {
+    "dev": "node run.js"
+  },
+  "devDependencies": {
+    "yu-webpack": "*"
+  },
+  "dependencies": {
+    "vue": "^2.6.10",
+    "vue-router": "^3.0.7",
+    "yu-css": "*",
+    "yu-front": "*",
+    "yu-util": "*",
+    "yu-vue": "*"
+  },
+  "author": "",
+  "license": "ISC",
+  "description": ""
+}

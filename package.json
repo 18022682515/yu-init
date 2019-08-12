@@ -1,0 +1,21 @@
+{
+  "name": "yu-init",
+  "version": "1.1.7",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "bin": {
+    "yu-init": "./index.js"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "commander": "^2.20.0",
+    "yu-node": "*"
+  },
+  "__npminstall_done": "Sun Jun 23 2019 20:45:44 GMT+0800 (GMT+08:00)",
+  "_from": "yu-init@1.1.6",
+  "_resolved": "https://registry.npm.taobao.org/yu-init/download/yu-init-1.1.0.tgz?cache=0&sync_timestamp=1561293933717&other_urls=https%3A%2F%2Fregistry.npm.taobao.org%2Fyu-init%2Fdownload%2Fyu-init-1.1.0.tgz"
+}
