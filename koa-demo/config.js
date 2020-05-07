@@ -1,0 +1,29 @@
+
+module.exports = {
+    redis:{ //开启redis储存session,不开启则设置为redis:false
+        port: 6379,
+        host: "127.0.0.1",
+        family: 4, // 4 (IPv4) or 6 (IPv6)
+        password: "",
+        db: 0 
+    },
+
+    keys:['1234567wertyasdfg'], //cookies的密匙
+
+    middlewares:['middleA'], //['middleA','middleB',……], 中间件的文件名加入数组，从0索引开始按顺序执行
+
+    static:'static',  //静态文件的目录
+
+    view:'static',   //html文件的目录
+
+    http:{
+        port:80
+    },
+    
+    mysql:{
+        host: 'localhost',
+        user: 'root',
+        password: '',
+        database: 'deng'
+    }
+}
