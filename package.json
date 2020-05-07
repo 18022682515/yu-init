@@ -22,8 +22,5 @@
   "bugs": {
     "url": "https://github.com/18022682515/yu-init/issues"
   },
-  "homepage": "https://github.com/18022682515/yu-init#readme",
-  "__npminstall_done": "Thu May 07 2020 09:29:35 GMT+0800 (GMT+08:00)",
-  "_from": "yu-init@1.3.4",
-  "_resolved": "https://registry.npm.taobao.org/yu-init/download/yu-init-1.3.4.tgz?cache=0&sync_timestamp=1588814938162&other_urls=https%3A%2F%2Fregistry.npm.taobao.org%2Fyu-init%2Fdownload%2Fyu-init-1.3.4.tgz"
+  "homepage": "https://github.com/18022682515/yu-init#readme"
 }
