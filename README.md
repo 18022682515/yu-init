@@ -6,16 +6,6 @@
 cnpm install -g yu-init
 ```
 
-### 创建koa服务器框架的项目
-```
-yu-init 项目名 -s
-```
-
-### 创建koa多进程服务器框架的项目
-```
-yu-init 项目名 -k
-```
-
 ### 创建webpack4构建的移动端项目（已配置vue,less）
 ```
 yu-init 项目名 -m
@@ -24,5 +14,15 @@ yu-init 项目名 -m
 ### 创建webpack4构建的pc端项目（已配置vue,less）
 ```
 yu-init 项目名 -p
+```
+
+### 创建koa服务器框架的项目
+```
+yu-init 项目名 -s
+```
+
+### 创建koa多进程服务器框架的项目
+```
+yu-init 项目名 -k
 ```
 

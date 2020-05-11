@@ -3,9 +3,9 @@
 const path = require('path');
 const fs = require('fs');
 const program = require('commander');
-const { copyDir } = require('yu-node');
+const { copyDir,rmDir } = require('yu-node');
+const childProcess = require('child_process');
 
-program.version('1.3.8');
 program
 	.arguments('<dir>')
 	.option('-k --koa','创建koa多进程项目')
@@ -28,24 +28,41 @@ function callback(dir,cmd){
 	}
 }
 
+function coverDir(demoType){
+	return new Promise(res=>{
+		rmDir(path.join(__dirname,demoType));
+		childProcess.exec('git clone https://github.com/yuzhou8/'+demoType+'.git',{ cwd:__dirname },(error, stdout, stderr)=>{
+			if(error){
+				console.log('下载失败,项目构建失败',error)
+				return;
+			}
+			res();
+		})
+		console.log('正在从github下载......');
+	});
+}
+
 function createDemo(dir,demoType){
-	let root = path.resolve('./',dir);
-	if(fs.existsSync(root)){
-		console.log('目录已存在');
-		return;
-	}
-	const source = path.resolve(__dirname,demoType);
-	copyDir(source,root);
-
-	let str = fs.readFileSync( path.resolve(source,'package.json'),'utf8' );
-	data = str.replace('test-1',dir);
-	setTimeout(()=>{
-		fs.writeFileSync(path.resolve(root,'package.json'),data);
-	},100);
-
-	console.log('\n     已生成项目文件\n');
-	console.log(`\n     cd ${dir}\n`);
-	console.log(`     安装npm包：cnpm install\n`);
-	!/webpack/.test(demoType) && console.log(`     安装npm包：cnpm install nodemon -g\n`);
-	console.log(`     启动项目：cnpm run dev\n`);
+	coverDir(demoType).then(()=>{
+		
+		let root = path.resolve('./',dir);
+		if(fs.existsSync(root)){
+			console.log('目录已存在');
+			return;
+		}
+		const source = path.resolve(__dirname,demoType);
+		copyDir(source,root);
+		
+		let str = fs.readFileSync( path.resolve(source,'package.json'),'utf8' );
+		data = str.replace('test-1',dir);
+		setTimeout(()=>{
+			fs.writeFileSync(path.resolve(root,'package.json'),data);
+		},100);
+		
+		console.log('\n     项目构建完成\n');
+		console.log(`     cd ${dir}\n`);
+		console.log(`     安装npm包：cnpm install\n`);
+		!/webpack/.test(demoType) && console.log(`     安装npm包：cnpm install nodemon -g\n`);
+		console.log(`     启动项目：cnpm run dev\n`);
+	})
 }
