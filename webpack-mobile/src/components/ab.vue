@@ -1,13 +1,13 @@
 <template>
 <div class="ab">
-	我是a页的子页——ab页
+	ab页
 </div>
 
 </template>
 
 <script>
 export default {
-    name:'ab'
+	name:'ab'
 }
 </script>
 

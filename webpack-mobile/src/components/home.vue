@@ -1,7 +1,7 @@
 <template>
 <div class="home">
 	首页
-	<router-link to="/a">a页面链接</router-link>
+	<router-link to="/a">a</router-link>
 </div>
 </template>
 

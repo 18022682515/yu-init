@@ -46,6 +46,6 @@ function createDemo(dir,demoType){
 	console.log('\n     已生成项目文件\n');
 	console.log(`\n     cd ${dir}\n`);
 	console.log(`     安装npm包：cnpm install\n`);
-	/webpack/.test(demoType) && console.log(`     安装npm包：cnpm install nodemon -g\n`);
+	!/webpack/.test(demoType) && console.log(`     安装npm包：cnpm install nodemon -g\n`);
 	console.log(`     启动项目：cnpm run dev\n`);
 }
