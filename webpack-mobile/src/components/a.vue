@@ -2,7 +2,7 @@
 <div class="a">
 	a页
 	<router-link to="/a/ab">ab</router-link>
-	<yu-view name="left"></yu-view>
+	<yu-view transition="left"></yu-view>
 </div>
 
 </template>

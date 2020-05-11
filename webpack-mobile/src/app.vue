@@ -1,6 +1,6 @@
 <template>
 <div id="app">
-	<yu-view name="left"></yu-view>
+	<yu-view transition="left"></yu-view>
 </div>
 </template>
 

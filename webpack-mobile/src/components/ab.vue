@@ -1,7 +1,6 @@
 <template>
 <div class="ab">
-	ab页
-</div>
+	abҳ</div>
 
 </template>
 

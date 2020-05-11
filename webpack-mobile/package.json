@@ -51,6 +51,6 @@
     "core-js": "^3.6.4",
     "vue": "^2.6.11",
 		"vue-router": "^3.1.6",
-		"yu-vue-mobile": "^1.2.4"
+		"yu-vue-mobile": "^1.2.5"
   }
 }

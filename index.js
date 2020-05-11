@@ -5,7 +5,7 @@ const fs = require('fs');
 const program = require('commander');
 const { copyDir } = require('yu-node');
 
-program.version('1.3.5');
+program.version('1.3.8');
 program
 	.arguments('<dir>')
 	.option('-k --koa','创建koa多进程项目')
