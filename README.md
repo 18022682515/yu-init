@@ -16,7 +16,13 @@ yu-init 项目名 -s
 yu-init 项目名 -k
 ```
 
-### 创建webpack4构建的前端项目（已配置vue,less）
+### 创建webpack4构建的移动端项目（已配置vue,less）
 ```
-yu-init 项目名 -w
+yu-init 项目名 -m
 ```
+
+### 创建webpack4构建的pc端项目（已配置vue,less）
+```
+yu-init 项目名 -p
+```
+
