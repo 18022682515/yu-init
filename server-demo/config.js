@@ -11,7 +11,7 @@ module.exports = {
     keys:['1234567wertyasdfg'], //cookies的密匙
 
     middlewares:['middleA'], //['middleA','middleB',……], 中间件的文件名加入数组，从0索引开始按顺序执行
-
+		
     static:'static',  //静态文件的目录
 
     view:'static',   //html文件的目录
@@ -31,5 +31,9 @@ module.exports = {
         user: 'root',
         password: '',
         database: 'deng'
-    }
+    },
+		
+		routesPrefix:{     //路由添加前缀，原先：localhost/login，添加前缀后：localhost/user/login
+			'/user':['user'],     //数组中的'user'是controller目录的user.js，给该文件的所有路由添加'/user'前缀。
+		}
 }
