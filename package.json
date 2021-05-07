@@ -1,0 +1,26 @@
+{
+  "name": "yu-init",
+  "version": "1.4.1",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "bin": {
+    "yu-init": "./index.js"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "commander": "^2.20.0",
+    "yu-node": "*"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/18022682515/yu-init.git"
+  },
+  "bugs": {
+    "url": "https://github.com/18022682515/yu-init/issues"
+  },
+  "homepage": "https://github.com/18022682515/yu-init#readme"
+}
