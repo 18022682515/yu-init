@@ -1,5 +1,5 @@
 {
-  "name": "test-1",
+  "name": "test",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
@@ -10,6 +10,6 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "yu-server": "*"
+		"yu-server": "*"
   }
 }

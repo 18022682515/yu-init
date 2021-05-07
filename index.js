@@ -25,7 +25,7 @@ function callback(dir,cmd){
 function coverDir(demoType){
 	return new Promise(res=>{
 		rmDir(path.join(__dirname,demoType));
-		childProcess.exec('git clone https://github.com/yuzhou8/'+demoType+'.git',{ cwd:__dirname },(error, stdout, stderr)=>{
+		childProcess.exec('git clone https://github.com/18022682515/'+demoType+'.git',{ cwd:__dirname },(error, stdout, stderr)=>{
 			if(error){
 				console.log('下载失败,项目构建失败',error)
 				return;
