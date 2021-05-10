@@ -1,6 +1,6 @@
 {
   "name": "yu-init",
-  "version": "1.4.2",
+  "version": "1.4.4",
   "description": "",
   "main": "index.js",
   "scripts": {
@@ -9,7 +9,7 @@
   "bin": {
     "yu-init": "./index.js"
   },
-  "author": "",
+  "author": "邓小宇",
   "license": "ISC",
   "dependencies": {
     "commander": "^2.20.0",

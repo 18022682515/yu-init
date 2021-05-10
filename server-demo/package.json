@@ -7,9 +7,12 @@
     "dev": "nodemon run.js",
     "pro": "node run.js"
   },
-  "author": "",
+  "author": "邓小宇",
   "license": "ISC",
   "dependencies": {
 		"yu-server": "*"
-  }
+  },
+	"devDependencies": {
+		"nodemon": "^2.0.7"
+	}
 }

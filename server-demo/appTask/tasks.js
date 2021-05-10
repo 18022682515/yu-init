@@ -5,7 +5,7 @@ module.exports = [
         // timing:'*/3 * * * * *',
         // callback:function(){
         //     let obj = { name:'小明' };
-        //     app.cache= obj;
+        //     app.cache.obj = obj;
         //     console.log('定时任务1', app.cache);
         // }
     // }, 
